@@ -13,6 +13,7 @@ module.exports = merge(common, {
       template: path.resolve(__dirname, 'src', 'index.html'),
       filename: path.resolve(__dirname, 'dist', 'index.html'),
       hash: false,
+      publicPath: '',
     }),
     new CopyPlugin({
       patterns: [
