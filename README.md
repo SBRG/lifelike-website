@@ -1,5 +1,8 @@
 # Lifelike website
 
+[![CodeQL](https://github.com/SBRG/lifelike-website/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/SBRG/lifelike-website/actions/workflows/codeql-analysis.yml)
+[![GitHub Pages](https://github.com/SBRG/lifelike-website/actions/workflows/deploy-github-pages.yml/badge.svg)](https://github.com/SBRG/lifelike-website/actions/workflows/deploy-github-pages.yml)
+
 ## Install dependencies
 
 ```shell
