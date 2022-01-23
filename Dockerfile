@@ -17,7 +17,6 @@ RUN yarn build
 # Runtime stage - NGINX
 # ========================================
 FROM nginx:1.21
-WORKDIR /usr/share/nginx/html
 
 # Copy built assets
-COPY --from=build /app/dist ./
+COPY --from=build /app/dist /usr/share/nginx/html
