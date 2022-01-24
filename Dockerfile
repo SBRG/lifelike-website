@@ -8,10 +8,12 @@ WORKDIR /app
 COPY package.json yarn.lock ./
 RUN yarn install
 
-# Build landing page
-COPY src src/
-COPY webpack.* babel.config.json ./
-RUN yarn build
+# Copy source files
+COPY . ./
+
+# Build website bundle
+ARG BASE_PATH=/
+RUN yarn build --base $BASE_PATH
 
 # ========================================
 # Runtime stage - NGINX
