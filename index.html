@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="./stylesheets/index.scss" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description"
     content="Turn big data into contextualized knowledge, creating a 360-degree view and big picture understanding, augmenting our intelligence in solving complex problems." />
@@ -20,6 +22,7 @@
 </head>
 
 <body>
+  <script type="module" src="/main.js"></script>
   <div class="site-main">
     <div class="site-top">
       <header class="site-header-container">
@@ -28,9 +31,15 @@
             <h1>Lifelike</h1>
           </div>
 
-          <nav class="site-header-buttons d-flex ml-auto">
-            <a class="btn btn-outline-light" href="https://lifelike.bio/workspaces/local">
+          <nav id="login-nav-item" class="site-header-buttons ml-auto d-none">
+            <a id="login-link" class="btn btn-outline-light">
               Sign in
+            </a>
+          </nav>
+
+          <nav id="github-nav-item" class="site-header-buttons ml-auto d-none">
+            <a class="btn btn-outline-light">
+              GitHub
             </a>
           </nav>
         </div>
@@ -47,8 +56,7 @@
               intelligence in solving complex problems.
             </div>
 
-            <a href="mailto:lifelike@biosustain.dtu.dk?body=I am interested in demoing Lifelike." target="_blank"
-              class="btn btn-intro-primary btn-lg">
+            <a id="demo-request-link" class="btn btn-intro-primary btn-lg">
               Request a Demo
             </a>
           </div>
@@ -60,7 +68,7 @@
       <div class="feature-table">
         <div class="feature-item">
           <div class="feature-icon">
-            <img src="assets/img/workflow_step_1.png" alt="Document annotations" />
+            <img src="/assets/img/workflow_step_1.png" alt="Document annotations" />
           </div>
           <h2 class="feature-title">Extract concepts easily</h2>
           <div class="feature-description">
@@ -72,7 +80,7 @@
 
         <div class="feature-item">
           <div class="feature-icon">
-            <img src="assets/img/workflow_step_2.png" alt="Documents being collected" />
+            <img src="/assets/img/workflow_step_2.png" alt="Documents being collected" />
           </div>
           <h2 class="feature-title">Make new connections</h2>
           <div class="feature-description">
@@ -83,7 +91,7 @@
 
         <div class="feature-item">
           <div class="feature-icon">
-            <img src="assets/img/workflow_step_3.png" alt="Human head with a directed graph inside" />
+            <img src="/assets/img/workflow_step_3.png" alt="Human head with a directed graph inside" />
           </div>
           <h2 class="feature-title">Leap beyond traditional research</h2>
           <div class="feature-description">
@@ -104,7 +112,7 @@
 
         <div class="row">
           <div class="col-lg-6 mb-4 mb-lg-0 text-center">
-            <img src="assets/img/reveal_left.png" alt="digital mind" class="mw-100" style="max-height: 500px;" />
+            <img src="/assets/img/reveal_left.png" alt="digital mind" class="mw-100" style="max-height: 500px;" />
           </div>
           <div class="col-lg-6 mt-4 mt-lg-0">
             <p>
@@ -148,7 +156,7 @@
         <div class="point-table">
           <div class="point-item row justify-content-center mr-lg-4 align-items-center">
             <div class="point-image col-md-4 mb-4 mb-lg-0">
-              <img src="assets/img/point_nlp.png" alt="Picture of a brain morphing into circuits" />
+              <img src="/assets/img/point_nlp.png" alt="Picture of a brain morphing into circuits" />
             </div>
             <div class="point-body col-md-8 col-lg-6">
               <h2 class="point-title">Natural Language Processing</h2>
@@ -168,7 +176,7 @@
 
           <div class="point-item row justify-content-center ml-lg-4 align-items-center">
             <div class="point-image col-md-4 order-md-2 mb-4 mb-lg-0">
-              <img src="assets/img/point_kr.png"
+              <img src="/assets/img/point_kr.png"
                 alt="Picture of a graph with nodes consisting of different type of content" />
             </div>
             <div class="point-body col-md-8 col-lg-6">
@@ -190,7 +198,8 @@
 
           <div class="point-item row justify-content-center mr-lg-4 align-items-center">
             <div class="point-image col-md-4 mb-4 mb-lg-0">
-              <img src="assets/img/point_patterns.png" alt="Picture of patterns in circles that look like snowflakes" />
+              <img src="/assets/img/point_patterns.png"
+                alt="Picture of patterns in circles that look like snowflakes" />
             </div>
             <div class="point-body col-md-8 col-lg-6">
               <h2 class="point-title">
@@ -213,7 +222,7 @@
 
           <div class="point-item row justify-content-center ml-lg-4 align-items-center">
             <div class="point-image col-md-4 order-md-2 mb-4 mb-lg-0">
-              <img src="assets/img/point_graph.png" alt="Picture of a non-directed graph" />
+              <img src="/assets/img/point_graph.png" alt="Picture of a non-directed graph" />
             </div>
             <div class="point-body col-md-8 col-lg-6">
               <h2 class="point-title">
@@ -241,9 +250,9 @@
         We would like to thank the Novo Nordisk Foundation for funding this work.
       </div>
       <div class="footer-logos">
-        <img src="assets/img/cfb_logo.png" alt="The Novo Nordisk Foundation Center for Sustainability" />
-        <img src="assets/img/ucsd_logo.png" alt="University of California San Diego Bioengineering" />
-        <img src="assets/img/dtu_logo.png" alt="Technical University of Denmark - DTU" />
+        <img src="/assets/img/cfb_logo.png" alt="The Novo Nordisk Foundation Center for Sustainability" />
+        <img src="/assets/img/ucsd_logo.png" alt="University of California San Diego Bioengineering" />
+        <img src="/assets/img/dtu_logo.png" alt="Technical University of Denmark - DTU" />
       </div>
       <div class="mt-4 text-muted">
         Copyright &copy; 2022 Novo Nordisk Foundation Center for Biosustainability. All rights reserved.

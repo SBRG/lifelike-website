@@ -19,6 +19,6 @@ yarn build
 ## Run locally for development
 
 ```shell
-# Runs website in http://localhost:9000
-yarn start
+# Runs website in http://localhost:3000
+yarn dev
 ```
