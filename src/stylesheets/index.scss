@@ -1,4 +1,4 @@
-@import './variables';
+@import './_variables.scss';
 @import './bootstrap';
 
 body {
@@ -27,7 +27,7 @@ body {
   position: relative;
   z-index: 1;
   padding-bottom: $edge-angle-size + 5px;
-  background: $primary url(/assets/img/intro_people_bg.jpg);
+  background-color: $primary;
   background-position: center top;
   background-size: cover;
 
