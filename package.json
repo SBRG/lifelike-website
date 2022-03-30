@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "bootstrap": "^4",
-    "flagsmith": "^1.7.3",
+    "flagsmith": "^2.0.9",
     "sass": "^1.49.0",
     "vite": "^2.7.2"
   }
