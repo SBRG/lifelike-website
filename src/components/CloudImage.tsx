@@ -6,23 +6,26 @@ import {
   responsive,
 } from '@cloudinary/react';
 import { Cloudinary } from '@cloudinary/url-gen';
+import { getConfigValue } from '../config';
 
 interface CloudImageProps {
   objectId: string;
   [x: string]: any;
 }
 
-const cloudName = process.env.REACT_APP_CLOUDINARY_CLOUD_NAME;
-
-const moBaseUrl = `https://${cloudName}.mo.cloudinary.net`;
-
 const cloudinary = new Cloudinary({
-  cloud: { cloudName },
+  cloud: { cloudName: 'lifelike-bio' },
 });
 
 const getCloudImage = (objectId: string) => cloudinary.image(objectId);
 
 const getMediaUrl = (objectId: string, transformation?: string) => {
+  const cloudName = getConfigValue(
+    'cloudinary_cloud_name',
+    process.env.REACT_APP_CLOUDINARY_CLOUD_NAME
+  );
+
+  const moBaseUrl = `https://${cloudName}.mo.cloudinary.net`;
   return `${moBaseUrl}/${objectId}${
     transformation ? `?tx=${transformation}` : ''
   }`;

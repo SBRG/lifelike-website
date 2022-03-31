@@ -1,24 +1,14 @@
-import flagsmith from 'flagsmith';
 import { FlagsmithProvider } from 'flagsmith/react';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import { flagsmith } from './config';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
-const flagsmithUrl = process.env.REACT_APP_FLAGSMITH_API_URL;
-const flagsmithEnvironmentId = process.env.REACT_APP_FLAGSMITH_ENVIRONMENT_ID || '';
-
 ReactDOM.render(
   <React.StrictMode>
-    <FlagsmithProvider
-      flagsmith={flagsmith}
-      options={{
-        api: flagsmithUrl,
-        environmentID: flagsmithEnvironmentId,
-        cacheFlags: true
-      }}
-    >
+    <FlagsmithProvider flagsmith={flagsmith}>
       <App />
     </FlagsmithProvider>
   </React.StrictMode>,
