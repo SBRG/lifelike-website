@@ -21,7 +21,7 @@ jobs:
           node-version: '16.x'
       - run: yarn install
       - run: yarn run build --base /${{ github.event.repository.name }}
-      - run: cp ./dist/index.html ./dist/examples
+      - run: cp ./dist/index.html ./dist/404.html
 
       - name: Deploy to GitHub pages
         uses: peaceiris/actions-gh-pages@v3
