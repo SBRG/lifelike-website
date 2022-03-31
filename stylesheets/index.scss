@@ -97,35 +97,41 @@ body {
   font-size: 120%;
 }
 
+
 .btn-intro {
-  background: #fff;
-
-  &,
-  &:link,
-  &:visited {
-    color: #222;
-  }
-}
-
-.btn-intro-primary {
-  background: $secondary;
-
-  &,
-  &:link,
-  &:visited {
-    color: #fff;
-  }
-}
-
-.btn-intro,
-.btn-intro-primary {
+  min-width: 140px;
   border-radius: ($border-radius * 4);
   padding: $btn-padding-y-lg ($btn-padding-x-lg * 2);
+  margin-right: ($spacer * 1);
+  margin-bottom: ($spacer * 0.5);
+  background: $gray-400;
+
+  &,
+  &:link,
+  &:visited {
+    color: $black;
+  }
 
   @include hover() {
-    background: $black;
+    background: $gray-600;
     color: $white;
   }
+
+  &.primary {
+    background: $secondary;
+
+    @include hover() {
+      background: $gray-600;
+      color: $white;
+    }
+
+    &,
+    &:link,
+    &:visited {
+      color: $white;
+    }
+  }
+
 }
 
 .page-section {
