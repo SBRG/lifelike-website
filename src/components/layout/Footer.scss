@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+
+.Footer {
+  background: #fef7f1;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(254, 215, 181, 1) 100%
+  );
+  font-size: $font-size-sm;
+  padding: ($spacer * 2) 0 ($spacer * 2) 0;
+
+  .Footer--title {
+    font-family: $font-intro;
+    font-size: 280%;
+    text-align: center;
+  }
+
+  img {
+    margin: 20px;
+    max-width: 100%;
+  }
+}

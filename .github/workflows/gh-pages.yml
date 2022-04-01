@@ -12,20 +12,18 @@ jobs:
     runs-on: ubuntu-20.04
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
-    steps:
-      - uses: actions/checkout@v2
 
-      - name: Build static website
-        uses: actions/setup-node@v1
-        with:
-          node-version: '16.x'
-      - run: yarn install
-      - run: yarn run build --base /${{ github.event.repository.name }}
-      - run: cp ./dist/index.html ./dist/404.html
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/node-app
+
+      - run: yarn build
+        env:
+          PUBLIC_URL: /${{ github.event.repository.name }}
 
       - name: Deploy to GitHub pages
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./build

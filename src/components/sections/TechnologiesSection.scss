@@ -1,0 +1,37 @@
+@import '../../styles/variables';
+@import '../../styles/bootstrap';
+
+.Technologies {
+  .Technologies--item {
+    margin-bottom: ($spacer * 2);
+  
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  .Technologies--body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .Technologies--image {
+    text-align: center;
+  
+    img {
+      width: 310px;
+      max-width: 100%;
+    }
+  }
+  
+  .Technologies--title {
+    margin-bottom: ($spacer * 0.6);
+    font-weight: bold;
+    font-size: 110%;
+  
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+    }
+  }
+}
