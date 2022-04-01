@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/lifelike-website/static/css/main.0801c4a6.css",
+    "main.js": "/lifelike-website/static/js/main.576df825.js",
+    "static/js/787.c43dab98.chunk.js": "/lifelike-website/static/js/787.c43dab98.chunk.js",
+    "static/media/intro_people_bg.jpg": "/lifelike-website/static/media/intro_people_bg.cd28dbca2e73248c0235.jpg",
+    "index.html": "/lifelike-website/index.html",
+    "main.0801c4a6.css.map": "/lifelike-website/static/css/main.0801c4a6.css.map",
+    "main.576df825.js.map": "/lifelike-website/static/js/main.576df825.js.map",
+    "787.c43dab98.chunk.js.map": "/lifelike-website/static/js/787.c43dab98.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0801c4a6.css",
+    "static/js/main.576df825.js"
+  ]
+}
