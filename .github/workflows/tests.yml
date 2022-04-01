@@ -13,5 +13,6 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
+      - uses: actions/checkout@v3
       - uses: ./.github/actions/node-app
       - run: yarn test

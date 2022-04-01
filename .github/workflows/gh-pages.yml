@@ -14,8 +14,8 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
 
     steps:
-      - name: Setup Node.js application
-        uses: ./.github/actions/node-app
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/node-app
 
       - run: yarn build
         env:
