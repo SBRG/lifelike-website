@@ -12,24 +12,12 @@ jobs:
     runs-on: ubuntu-20.04
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
+
     steps:
-      - uses: actions/checkout@v3
+      - name: Setup Node.js application
+        uses: ./.github/actions/node-app
 
-      - name: Build static website
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-
-      - name: Cache dependencies
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
-      - run: yarn install
-      - run: yarn run build
+      - run: yarn build
         env:
           PUBLIC_URL: /${{ github.event.repository.name }}
 

@@ -1,0 +1,25 @@
+@import '../../styles/variables';
+
+.Section {
+  padding: ($spacer * 2.5) 0;
+
+  &.secondary {
+    background: #f7fbfc;
+  }
+
+  .catcher-subtitle {
+    color: $gray-500;
+    font-size: 140%;
+  }
+
+  .catcher-body {
+    padding: ($spacer * 1) 0;
+  }
+
+  .section-title {
+    font-family: $font-intro;
+    font-size: 210%;
+    text-align: center;
+    margin: 0 0 ($spacer * 2) 0;
+  }
+}

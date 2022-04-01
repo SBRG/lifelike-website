@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+
+.Divider {
+    margin: 0;
+    padding: ($spacer * 0.75) 0;
+    background: $secondary;
+    font-family: $font-intro;
+    color: $white;
+    font-size: 210%;
+    text-align: center;
+}

@@ -1,18 +1,20 @@
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 import { FlagsmithProvider } from 'flagsmith/react';
-import React from 'react';
-import ReactDOM from 'react-dom';
 import App from './App';
 import { flagsmith } from './config';
-import './index.css';
+import './styles/index.scss';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <FlagsmithProvider flagsmith={flagsmith}>
+const container = document.getElementById('root')!;
+const root = createRoot(container);
+
+root.render(
+  <FlagsmithProvider flagsmith={flagsmith}>
+    <BrowserRouter>
       <App />
-    </FlagsmithProvider>
-  </React.StrictMode>,
-  document.getElementById('root')
+    </BrowserRouter>
+  </FlagsmithProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
