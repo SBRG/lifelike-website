@@ -9,7 +9,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
 
@@ -19,7 +19,7 @@ jobs:
 
       - run: yarn build
         env:
-          PUBLIC_URL: /${{ github.event.repository.name }}
+          PUBLIC_URL: https://sbrg.github.io/${{ github.event.repository.name }}
 
       - name: Deploy to GitHub pages
         uses: peaceiris/actions-gh-pages@v3
