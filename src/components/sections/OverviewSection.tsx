@@ -3,6 +3,7 @@ import Image from 'react-bootstrap/Image';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Section from './Section';
+import overviewImage from '../../assets/images/overview.png';
 
 const overviewParagraphs = [
   'Lifelike has several integrated features that support knowledge mining and collaboration among users in the biosciences field.',
@@ -20,7 +21,7 @@ const OverviewSection = () => (
       <Row>
         <Col lg={6} className="mb-4 mb-lg-0 text-center">
           <Image
-            src="/images/reveal_left.png"
+            src={overviewImage}
             alt="Digital mind"
             className="mw-100"
             style={{ maxHeight: '500px' }}

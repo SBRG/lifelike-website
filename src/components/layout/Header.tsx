@@ -1,7 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Stack from 'react-bootstrap/Stack';
-import { NavLink } from 'react-router-dom';
+import { LinkContainer } from 'react-router-bootstrap';
 import './Header.scss';
 // import Section from './layout/Section';
 // import UserMenu from './UserMenu';
@@ -9,14 +9,6 @@ import NavBar from './NavBar';
 
 const Header = () => (
   <header className="Header shadow">
-    {/* <div className="site-header wrapper d-flex align-items-center flex-wrap">
-        <div className="site-logo mr-4">
-          <NavLink to="/">
-            <h1>Lifelike</h1>
-          </NavLink>
-        </div>
-      </div> */}
-
     <div className="intro">
       <Container>
         <NavBar />
@@ -41,9 +33,9 @@ const Header = () => (
           >
             Request a Demo
           </Button>
-          <NavLink to="/examples" className="btn btn-lg">
-            View Examples
-          </NavLink>
+          <LinkContainer to="/examples">
+            <Button size="lg">View Examples</Button>
+          </LinkContainer>
         </Stack>
       </Container>
     </div>
