@@ -2,6 +2,10 @@ import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import './Footer.scss';
 
+import cfbLogo from '../../assets/images/logo-cfb.png';
+import dtuLogo from '../../assets/images/logo-dtu.png';
+import ucsdLogo from '../../assets/images/logo-ucsd.png';
+
 type Partner = {
   name: string;
   logo: string;
@@ -10,15 +14,15 @@ type Partner = {
 const partners: Partner[] = [
   {
     name: 'The Novo Nordisk Foundation Center for Sustainability',
-    logo: '/images/cfb_logo.png',
+    logo: cfbLogo
   },
   {
     name: 'University of California San Diego Bioengineering',
-    logo: '/images/ucsd_logo.png',
+    logo: ucsdLogo
   },
   {
     name: 'Technical University of Denmark - DTU',
-    logo: '/images/dtu_logo.png',
+    logo: dtuLogo
   },
 ];
 

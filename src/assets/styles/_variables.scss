@@ -1,0 +1,21 @@
+@import "~bootstrap/scss/functions";
+
+$primary: #056981;
+$secondary: #C96E2A;
+$light: #ED9C27;
+$dark: #222222;
+$border-radius: 10px;
+$font-family-base: 'Noto Sans', Helvetica, Arial, sans-serif;
+$font-intro: 'Patua One', $font-family-base;
+$font-logo: $font-family-base;
+
+@import "~bootstrap/scss/variables";
+
+$body-bg: $white;
+$site-main-bg: $white;
+$wrapper-width: map-get($grid-breakpoints, xl);
+$wrapper-padding-x-lg: $spacer * 3;
+$wrapper-padding-x: $spacer * 2;
+$edge-angle-size: 60px;
+$grid-gutter-width: 80px;
+$spacer: 2rem;

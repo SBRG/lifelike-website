@@ -1,8 +1,8 @@
-@import '../../styles/variables';
-@import '../../styles/bootstrap';
+@import '../../assets/styles/variables';
+@import '../../assets/styles/bootstrap';
 
 .Header {
-  background-image: url(../../../public/images/intro_people_bg.jpg);
+  background-image: url(../../assets/images/header-bg.jpg);
   position: relative;
   z-index: 1;
   padding-bottom: $edge-angle-size + 5px;
@@ -50,7 +50,7 @@
 
     .intro-left {
       @include media-breakpoint-up(md) {
-        width: 50%;
+        width: 60%;
       }
     }
 
