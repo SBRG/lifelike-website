@@ -39,7 +39,6 @@ const Example: FC<ExampleProps> = ({
         />
       )}
       <Row className="Example mt-4">
-        <a href={`#${id}`} id={id}></a>
         <Col lg={6} className="description">
           <p>{description}</p>
         </Col>

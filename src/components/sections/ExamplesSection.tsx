@@ -83,7 +83,7 @@ const ExamplesSection = () => {
       selectedExampleRef?.current?.scrollIntoView({ behavior: 'smooth' });
       setTimeout(() => setHasScrolled(true), 1000);
     }
-  }, [selectedExampleRef]);
+  }, [selectedExampleRef, hash]);
 
   return (
     <Section name="examples" title="Lifelike Examples" className="secondary">
