@@ -11,7 +11,7 @@ const root = createRoot(container);
 
 root.render(
   <FlagsmithProvider flagsmith={flagsmith}>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <App />
     </BrowserRouter>
   </FlagsmithProvider>
