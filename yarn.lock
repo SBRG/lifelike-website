@@ -1081,10 +1081,10 @@
     lodash.debounce "^4.0.8"
     typescript "^4.1.2"
 
-"@cloudinary/react@^1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@cloudinary/react/-/react-1.2.2.tgz#e7913498e031ac0c47136547abb1336ef0a4d17e"
-  integrity sha512-hQmmTXFqlF9vyBC12tFWclkZjoA0r9W+84Rz0BoqEl1OS41VZe6m5aI5AOF+OYgkZMYyQncH3lz04SptO59AUw==
+"@cloudinary/react@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@cloudinary/react/-/react-1.3.0.tgz#5e8637fc701981f95c56cf480f5722d5b3b96799"
+  integrity sha512-KGqRZhDRepaXtjwE+tBbQfghig9NUXvihFK/V1g1MhLyv7BJ4lrLFo8xMW1Ojw4aTDifkFW6qpBz38bYTbs/lw==
   dependencies:
     "@cloudinary/html" "^1.2.2"
 
