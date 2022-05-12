@@ -1069,10 +1069,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@cloudinary/html@^1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@cloudinary/html/-/html-1.2.2.tgz#778b590fd473af29c8ab7fc1229935bc9aa04a9e"
-  integrity sha512-cC7NzCxxkVPDpd4i3Fy5IHcEnTEau0qQKmeKsAWjdY6Yh7udVYN5l3tj9RDRt5f5e4Ib6m8HgP2G2h7BSSiHtQ==
+"@cloudinary/html@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@cloudinary/html/-/html-1.4.0.tgz#7406f479a0ae704a57c47db6965071f6fc846867"
+  integrity sha512-xBavswFN8o3+N7ExWgMfX8qJf5xcbfQ3TZzYOEP8jECoUpz42/TQzSVj74Kpk0ShV4zuQE+dsml9X4+nF4rqKA==
   dependencies:
     "@types/lodash.clonedeep" "^4.5.6"
     "@types/lodash.debounce" "^4.0.6"
@@ -1081,12 +1081,12 @@
     lodash.debounce "^4.0.8"
     typescript "^4.1.2"
 
-"@cloudinary/react@^1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@cloudinary/react/-/react-1.2.2.tgz#e7913498e031ac0c47136547abb1336ef0a4d17e"
-  integrity sha512-hQmmTXFqlF9vyBC12tFWclkZjoA0r9W+84Rz0BoqEl1OS41VZe6m5aI5AOF+OYgkZMYyQncH3lz04SptO59AUw==
+"@cloudinary/react@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@cloudinary/react/-/react-1.4.0.tgz#edb9c0cdb4cc52ad29277c071149caf04b570f4d"
+  integrity sha512-dOsIl8pnUBwhss97ZerCANh3l4COOcbhBjUdZuT61uUYH8S+UXdvjyqnNpq+Sdj26g42ukzeES7Y58WTkkuxTg==
   dependencies:
-    "@cloudinary/html" "^1.2.2"
+    "@cloudinary/html" "^1.4.0"
 
 "@cloudinary/url-gen@^1.7.0":
   version "1.7.0"
